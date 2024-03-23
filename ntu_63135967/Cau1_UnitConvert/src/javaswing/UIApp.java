@@ -102,14 +102,15 @@ public class UIApp extends JFrame {
 	}
 	
 	void HamXuLyDoi()
-	{
+	{	
 		//Lấy dữ liệu
-		double giaTriNhap = Double.parseDouble(txtNhap.getText());
 	    String donViNhap = (String) comboNhap.getSelectedItem();
 	    String donViXuat = (String) comboXuat.getSelectedItem();
-	    
+	    double giaTriNhap = Double.parseDouble(txtNhap.getText());
+
 	    double ketQua= 0;
 	    //Chuyển dổi
+	   
 	    switch (donViNhap) {
         case "Kilometer":
             if (donViXuat.equals("Meter"))
