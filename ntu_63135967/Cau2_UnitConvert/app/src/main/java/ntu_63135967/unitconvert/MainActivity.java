@@ -1,4 +1,4 @@
-package ntu_63135967.cau2;
+package ntu_63135967.unitconvert;
 
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import ntu_63135967.unitconvert.R;
 
 public class MainActivity extends AppCompatActivity {
 
