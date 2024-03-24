@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Cau2_UnitConvert</string>
+
+    <string-array name="unit_array">
+        <item>km</item>
+        <item>m</item>
+        <item>cm</item>
+        <item>mm</item>
+    </string-array>
+
+</resources>
+

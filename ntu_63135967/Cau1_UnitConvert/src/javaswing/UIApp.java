@@ -9,6 +9,7 @@ import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.Color;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JComboBox;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -107,8 +108,19 @@ public class UIApp extends JFrame {
 		//Lấy dữ liệu
 	    String donViNhap = (String) comboNhap.getSelectedItem();
 	    String donViXuat = (String) comboXuat.getSelectedItem();
-	    double giaTriNhap = Double.parseDouble(txtNhap.getText());
+	    //double giaTriNhap = Double.parseDouble(txtNhap.getText());
+	    
+	    //chỉ cho phép nhập số
+	    double giaTriNhap;
 
+        try {
+            giaTriNhap = Double.parseDouble(txtNhap.getText());
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Vui lòng nhập số hợp lệ.", "Lỗi", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+	    
+	    
 	    double ketQua= 0;
 	    //Chuyển dổi
 	    switch (donViNhap) {
