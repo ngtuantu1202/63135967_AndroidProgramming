@@ -101,23 +101,27 @@ public class UIApp extends JFrame {
 		contentPane.add(txtKtQua);
 		
 		txtNhap = new JTextField();
+		txtNhap.setBackground(new Color(186, 85, 211));
 		txtNhap.setBounds(246, 109, 251, 33);
 		contentPane.add(txtNhap);
 		txtNhap.setColumns(10);
 		
 		txtKQ = new JTextField();
+		txtKQ.setBackground(new Color(0, 255, 255));
 		txtKQ.setEditable(false);
 		txtKQ.setColumns(10);
 		txtKQ.setBounds(207, 312, 251, 33);
 		contentPane.add(txtKQ);
 		
 		comboNhap = new JComboBox<>();
+		comboNhap.setBackground(new Color(0, 255, 0));
         comboNhap.setFont(new Font("Times New Roman", Font.PLAIN, 16));
         comboNhap.setModel(new DefaultComboBoxModel<>(new String[] { "Kilometer", "Meter", "Centimeter", "Milimeter" }));
         comboNhap.setBounds(246, 51, 251, 33);
         contentPane.add(comboNhap);
 
         comboXuat = new JComboBox<>();
+        comboXuat.setBackground(new Color(255, 215, 0));
         comboXuat.setModel(new DefaultComboBoxModel<>(new String[] { "Kilometer", "Meter", "Centimeter", "Milimeter" }));
         comboXuat.setFont(new Font("Times New Roman", Font.PLAIN, 16));
         comboXuat.setBounds(246, 169, 251, 33);
@@ -132,7 +136,7 @@ public class UIApp extends JFrame {
                 comboXuat.setSelectedIndex(0);
         	}
         });
-        bntReset.setBackground(new Color(255, 215, 0));
+        bntReset.setBackground(new Color(220, 20, 60));
         bntReset.setFont(new Font("Times New Roman", Font.PLAIN, 16));
         bntReset.setBounds(479, 311, 100, 33);
         contentPane.add(bntReset);
