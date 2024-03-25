@@ -72,6 +72,7 @@
         android:onClick="XuLyDoi"
         android:text="ĐỔI"
         android:textSize="40sp"
+        android:textColor="#FFFFFF"
         android:background="@drawable/background_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
