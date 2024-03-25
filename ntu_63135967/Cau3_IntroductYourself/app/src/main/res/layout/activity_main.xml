@@ -17,5 +17,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="218dp"
+            android:layout_height="167dp"
+            app:srcCompat="@mipmap/avatar"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="32dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
