@@ -69,14 +69,14 @@ public class UIApp extends JFrame {
 		});
 		bntDOI.setBackground(new Color(255, 0, 0));
 		bntDOI.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		bntDOI.setBounds(233, 237, 121, 59);
+		bntDOI.setBounds(207, 233, 121, 59);
 		contentPane.add(bntDOI);
 		
 		txtKtQua = new JTextField();
 		txtKtQua.setText("Kết quả:");
 		txtKtQua.setFont(new Font("Times New Roman", Font.PLAIN, 16));
 		txtKtQua.setColumns(10);
-		txtKtQua.setBounds(47, 365, 137, 33);
+		txtKtQua.setBounds(47, 311, 137, 33);
 		contentPane.add(txtKtQua);
 		
 		txtNhap = new JTextField();
@@ -87,7 +87,7 @@ public class UIApp extends JFrame {
 		txtKQ = new JTextField();
 		txtKQ.setEditable(false);
 		txtKQ.setColumns(10);
-		txtKQ.setBounds(246, 365, 251, 33);
+		txtKQ.setBounds(207, 312, 251, 33);
 		contentPane.add(txtKQ);
 		
 		comboNhap = new JComboBox<>();
@@ -101,6 +101,20 @@ public class UIApp extends JFrame {
         comboXuat.setFont(new Font("Times New Roman", Font.PLAIN, 16));
         comboXuat.setBounds(246, 169, 251, 33);
         contentPane.add(comboXuat);
+        
+        JButton bntReset = new JButton("Reset");
+        bntReset.addActionListener(new ActionListener() {
+        	public void actionPerformed(ActionEvent e) {
+        		txtNhap.setText("");
+                txtKQ.setText("");
+                comboNhap.setSelectedIndex(0);
+                comboXuat.setSelectedIndex(0);
+        	}
+        });
+        bntReset.setBackground(new Color(255, 215, 0));
+        bntReset.setFont(new Font("Times New Roman", Font.PLAIN, 16));
+        bntReset.setBounds(479, 311, 100, 33);
+        contentPane.add(bntReset);
 	}
 	
 	void HamXuLyDoi()
