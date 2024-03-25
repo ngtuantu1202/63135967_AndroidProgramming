@@ -12,6 +12,7 @@
         android:id="@+id/header"
         android:layout_width="408dp"
         android:layout_height="230dp"
+        android:background="@drawable/header_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
