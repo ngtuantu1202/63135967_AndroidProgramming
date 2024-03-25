@@ -68,6 +68,17 @@ public class UIApp extends JFrame {
                     JOptionPane.showMessageDialog(UIApp.this, "Vui lòng nhập số cần đổi.", "Lỗi", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
+				// Kiểm tra số âm
+		        try {
+		            double giaTriNhap = Double.parseDouble(txtNhap.getText());
+		            if (giaTriNhap < 0) {
+		                JOptionPane.showMessageDialog(UIApp.this, "Vui lòng không nhập số âm.", "Lỗi", JOptionPane.ERROR_MESSAGE);
+		                return;
+		            }
+		        } catch (NumberFormatException ex) {
+		            JOptionPane.showMessageDialog(UIApp.this, "Vui lòng nhập số hợp lệ.", "Lỗi", JOptionPane.ERROR_MESSAGE);
+		            return;
+		        }
 			    
 				//Gọi hàm xử lý ĐỔI
 				HamXuLyDoi();
