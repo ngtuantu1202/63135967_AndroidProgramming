@@ -63,6 +63,11 @@ public class UIApp extends JFrame {
 		JButton bntDOI = new JButton("ĐỔI");
 		bntDOI.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				//Kiểm tra đã nhập chưa
+				if (txtNhap.getText().isEmpty()) {
+                    JOptionPane.showMessageDialog(UIApp.this, "Vui lòng nhập số cần đổi.", "Lỗi", JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
 				//Gọi hàm xử lý ĐỔI
 				HamXuLyDoi();
 			}
