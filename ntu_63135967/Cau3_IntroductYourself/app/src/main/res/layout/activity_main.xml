@@ -32,9 +32,9 @@
 
     <Button
         android:id="@+id/btnTen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_width="141dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="180dp"
         android:background="@drawable/button_bg"
         android:text="Tên"
         android:textSize="34sp"
@@ -45,9 +45,9 @@
 
     <Button
         android:id="@+id/btnLop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_width="141dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/button_bg"
         android:text="Lớp"
         android:textSize="34sp"
@@ -57,9 +57,9 @@
 
     <Button
         android:id="@+id/btnMSSV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_width="141dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/button_bg"
         android:text="MSSV"
         android:textSize="34sp"
@@ -69,9 +69,9 @@
 
     <Button
         android:id="@+id/btnEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_width="141dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/button_bg"
         android:text="Email"
         android:textSize="34sp"
