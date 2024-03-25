@@ -64,6 +64,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/button_bg"
+        android:onClick="XuLyMSSV"
         android:text="MSSV"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"

@@ -28,4 +28,9 @@ public class MainActivity extends AppCompatActivity {
         String lop = "Lớp: CNTT-2";
         Toast.makeText(this, lop, Toast.LENGTH_SHORT).show();
     }
+    public void XuLyTMSSV(View view)
+    {
+        String mssv = "63135967";
+        Toast.makeText(this, mssv, Toast.LENGTH_SHORT).show();
+    }
 }
