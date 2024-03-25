@@ -68,6 +68,7 @@ public class UIApp extends JFrame {
                     JOptionPane.showMessageDialog(UIApp.this, "Vui lòng nhập số cần đổi.", "Lỗi", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
+			    
 				//Gọi hàm xử lý ĐỔI
 				HamXuLyDoi();
 			}
@@ -131,16 +132,14 @@ public class UIApp extends JFrame {
 	    
 	    //chỉ cho phép nhập số
 	    double giaTriNhap;
-
-        try {
+		try {
             giaTriNhap = Double.parseDouble(txtNhap.getText());
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, "Vui lòng nhập số hợp lệ.", "Lỗi", JOptionPane.ERROR_MESSAGE);
             return;
         }
-	    
-	    
 	    double ketQua= 0;
+	    
 	    //Chuyển dổi
 	    switch (donViNhap) {
         case "Kilometer":
