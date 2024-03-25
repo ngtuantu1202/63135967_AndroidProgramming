@@ -23,4 +23,9 @@ public class MainActivity extends AppCompatActivity {
         String ten = "Nguyễn Tuấn Tú";
         Toast.makeText(this, ten, Toast.LENGTH_SHORT).show();
     }
+    public void XuLyTLop(View view)
+    {
+        String lop = "Lớp: CNTT-2";
+        Toast.makeText(this, lop, Toast.LENGTH_SHORT).show();
+    }
 }
