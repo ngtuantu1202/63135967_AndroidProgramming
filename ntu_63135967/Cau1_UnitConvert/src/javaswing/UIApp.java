@@ -33,7 +33,7 @@ public class UIApp extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 621, 535);
 		contentPane = new JPanel();
-		contentPane.setBackground(new Color(0, 191, 255));
+		contentPane.setBackground(new Color(0, 0, 0));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
