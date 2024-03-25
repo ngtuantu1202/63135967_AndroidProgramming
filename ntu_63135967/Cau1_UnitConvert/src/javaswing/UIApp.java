@@ -40,6 +40,7 @@ public class UIApp extends JFrame {
 		contentPane.setLayout(null);
 		
 		txtChuynT = new JTextField();
+		txtChuynT.setBackground(new Color(50, 205, 50));
 		txtChuynT.setFont(new Font("Times New Roman", Font.PLAIN, 16));
 		txtChuynT.setText("Chọn đơn vị nhập:");
 		txtChuynT.setBounds(47, 50, 137, 33);
@@ -47,6 +48,7 @@ public class UIApp extends JFrame {
 		txtChuynT.setColumns(10);
 		
 		txtNhpSCn = new JTextField();
+		txtNhpSCn.setBackground(new Color(153, 50, 204));
 		txtNhpSCn.setText("Nhập sô cần đổi:");
 		txtNhpSCn.setFont(new Font("Times New Roman", Font.PLAIN, 16));
 		txtNhpSCn.setColumns(10);
@@ -54,6 +56,7 @@ public class UIApp extends JFrame {
 		contentPane.add(txtNhpSCn);
 		
 		txtChnnV = new JTextField();
+		txtChnnV.setBackground(new Color(255, 165, 0));
 		txtChnnV.setText("Chọn đơn vị xuất:");
 		txtChnnV.setFont(new Font("Times New Roman", Font.PLAIN, 16));
 		txtChnnV.setColumns(10);
@@ -90,6 +93,7 @@ public class UIApp extends JFrame {
 		contentPane.add(bntDOI);
 		
 		txtKtQua = new JTextField();
+		txtKtQua.setBackground(new Color(0, 255, 255));
 		txtKtQua.setText("Kết quả:");
 		txtKtQua.setFont(new Font("Times New Roman", Font.PLAIN, 16));
 		txtKtQua.setColumns(10);
