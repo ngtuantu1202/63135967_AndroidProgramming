@@ -1,11 +1,11 @@
 package ntu.ntt.usingrecyclerview;
 
-public class LampScape {
+public class LandScape {
     String landImageFileName;
     String landCation;
 
     //Constructor
-    public LampScape(String landImageFileName, String landCation) {
+    public LandScape(String landImageFileName, String landCation) {
         this.landImageFileName = landImageFileName;
         this.landCation = landCation;
     }

@@ -10,15 +10,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.sql.Array;
 import java.util.ArrayList;
-import java.util.zip.Inflater;
 
 public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.ItemLandHolder> {
     Context context;
-    ArrayList<LampScape> listData;
+    ArrayList<LandScape> listData;
 
-    public LandScapeAdapter(Context context, ArrayList<LampScape> listData) {
+    public LandScapeAdapter(Context context, ArrayList<LandScape> listData) {
         this.context = context;
         this.listData = listData;
     }
@@ -35,10 +33,10 @@ public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.Item
     @Override
     public void onBindViewHolder(@NonNull ItemLandHolder holder, int position) {
         // Lay doi tuong hien thi
-        LampScape lampScapeHienThi = listData.get(position);
+        LandScape landScapeHienThi = listData.get(position);
         //Trich thong tin
-        String caption = lampScapeHienThi.getLandCation();
-        String tenFileAnh = lampScapeHienThi.getLandImageFileName();
+        String caption = landScapeHienThi.getLandCation();
+        String tenFileAnh = landScapeHienThi.getLandImageFileName();
         //Dat vao cac truong thong tin cua holder
         holder.tvCaption.setText(caption);
             //dat anh
