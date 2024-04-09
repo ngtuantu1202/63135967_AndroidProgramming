@@ -36,7 +36,7 @@ public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.Item
         // Lay doi tuong hien thi
         LandScape landScapeHienThi = listData.get(position);
         //Trich thong tin
-        String caption = landScapeHienThi.getLandCation();
+        String caption = landScapeHienThi.getLandCapion();
         String tenFileAnh = landScapeHienThi.getLandImageFileName();
         //Dat vao cac truong thong tin cua holder
         holder.tvCaption.setText(caption);
@@ -65,7 +65,7 @@ public class LandScapeAdapter extends RecyclerView.Adapter<LandScapeAdapter.Item
         public void onClick(View v) {
             int viTriDcClick = getAdapterPosition();
             LandScape phanTuDcClick = listData.get(viTriDcClick);
-            String ten = phanTuDcClick.getLandCation();
+            String ten = phanTuDcClick.getLandCapion();
             String tenFile = phanTuDcClick.getLandImageFileName();
 
             String chuoiThongBao = "Bạn vừa click vào: " + ten;
