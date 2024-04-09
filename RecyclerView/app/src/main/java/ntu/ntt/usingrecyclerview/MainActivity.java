@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<LandScape> getDataForRecyclerView()
     {
         ArrayList<LandScape> dsDuLieu = new ArrayList<LandScape>();
-        LandScape ls1 = new LandScape("vinhhalong", "Vịnh Hạ Long");
+        LandScape ls1 = new LandScape("vinh_ha_long", "Vịnh Hạ Long");
         dsDuLieu.add(ls1);
-        dsDuLieu.add(new LandScape("beachwin10", "Bãi biển"));
-        dsDuLieu.add(new LandScape("ca", "Cá"));
+        dsDuLieu.add(new LandScape("ponagar", "Tháp bà Ponagar"));
+        dsDuLieu.add(new LandScape("tram_huong", "Tháp Trầm Hương"));
         return dsDuLieu;
     }
 }
