@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/item1"
+            android:icon="@drawable/inbox_24px"
+            android:title="Hộp thư đến"
+            android:checked="true"/>
+
+        <item
+            android:id="@+id/item2"
+            android:icon="@drawable/star_24px"
+            android:title="Có gắn dấu sao"/>
+
+        <item
+            android:id="@+id/item3"
+            android:icon="@drawable/schedule_24px"
+            android:title="Đã tạm ẩn"/>
+
+        <item
+            android:id="@+id/item4"
+            android:icon="@drawable/send_24px"
+            android:title="Đã gửi"/>
+
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/category"
+            android:title="Danh mục">
+
+            <menu>
+                <item
+                    android:id="@+id/item5"
+                    android:icon="@drawable/group_24px"
+                    android:title="Mạng xã hội"/>
+
+                <item
+                    android:id="@+id/item6"
+                    android:icon="@drawable/forum_24px"
+                    android:title="Diễn đàn"/>
+
+                <item
+                    android:id="@+id/item7"
+                    android:icon="@drawable/sell_24px"
+                    android:title="Quảng cáo"/>
+            </menu>
+        </item>
+
+    </group>
+
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/item8"
+            android:icon="@drawable/stackedemail_24px"
+            android:title="Tất cả thư"/>
+
+        <item
+            android:id="@+id/item9"
+            android:icon="@drawable/error_24px"
+            android:title="Thư rác"/>
+
+        <item
+            android:id="@+id/item10"
+            android:icon="@drawable/delete_24px"
+            android:title="Thùng rác"/>
+
+    </group>
+</menu>
