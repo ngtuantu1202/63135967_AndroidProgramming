@@ -20,5 +20,4 @@
         android:id="@+id/nav_cau4"
         android:icon="@drawable/ic_cau4"
         android:title="Câu 4" />
-
 </menu>
