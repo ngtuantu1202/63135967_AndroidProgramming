@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">TestThiCK</string>
+
+    <string name="profile_text">Profile</string>
+    <string name="cau1_text">Câu 1</string>
+    <string name="cau2_text">Câu 2</string>
+    <string name="cau3_text">Câu 3</string>
+    <string name="cau4_text">Câu 4</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
