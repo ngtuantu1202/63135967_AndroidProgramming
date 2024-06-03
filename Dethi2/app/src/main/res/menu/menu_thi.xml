@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile" />
+    <item
+        android:id="@+id/nav_cau1"
+        android:icon="@drawable/ic_cau1"
+        android:title="Câu 1" />
+    <item
+        android:id="@+id/nav_cau2"
+        android:icon="@drawable/ic_cau2"
+        android:title="Câu 2" />
+    <item
+        android:id="@+id/nav_cau3"
+        android:icon="@drawable/ic_cau3"
+        android:title="Câu 3" />
+</menu>
