@@ -3,45 +3,32 @@ package ntu.ngtuantu.test;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Cau3Fragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+
+
 public class Cau3Fragment extends Fragment {
+    //1.Khai bao bien toan cuc
+    LandScapeAdapter landScapeAdapter;
+    ArrayList<LandScape> recyclerViewDatas = new ArrayList<>();
+    //2. Khai bao bien dai dien view can tuong tac
+    RecyclerView recyclerViewLandscape;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     public Cau3Fragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Cau3Fragment.
-     */
-    // TODO: Rename and change types and number of parameters
+
     public static Cau3Fragment newInstance(String param1, String param2) {
         Cau3Fragment fragment = new Cau3Fragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -49,16 +36,36 @@ public class Cau3Fragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+        //3. Them du lieu
+//        ArrayList<LandScape> dsDuLieu = new ArrayList<LandScape>();
+//        LandScape ls1 = new LandScape("vinh_ha_long", "Vịnh Hạ Long");
+//        dsDuLieu.add(ls1);
+//        dsDuLieu.add(new LandScape("ponagar", "Tháp bà Ponagar"));
+//        dsDuLieu.add(new LandScape("tram_huong", "Tháp Trầm Hương"));
+        recyclerViewDatas.add(new LandScape("vinh_ha_long", "Vịnh Hạ Long"));
+        recyclerViewDatas.add(new LandScape("ponagar", "Tháp bà Ponagar"));
+        recyclerViewDatas.add(new LandScape("tram_huong", "Tháp Trầm Hương"));
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cau3, container, false);
+        View viewCau3 = inflater.inflate(R.layout.fragment_cau3, container, false);
+        //4. Tim dieu khien Recycler
+        recyclerViewLandscape = viewCau3.findViewById(R.id.ryCau3);
+        //5. Tao layout manager de dat bo cuc cho Recycler
+        RecyclerView.LayoutManager layoutLinear = new LinearLayoutManager(viewCau3.getContext());
+        recyclerViewLandscape.setLayoutManager(layoutLinear);
+//        RecyclerView.LayoutManager layoutLinearHorizonal = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+//        recyclerViewLandscape.setLayoutManager(layoutLinearHorizonal);
+//        RecyclerView.LayoutManager layoutGrid = new GridLayoutManager(this, 2);
+//        recyclerViewLandscape.setLayoutManager(layoutGrid);
+        //6. tao adapte gan vao nguon du lieu
+        landScapeAdapter = new LandScapeAdapter(viewCau3.getContext(), recyclerViewDatas);
+        //7. gan adapter vao recycler
+        recyclerViewLandscape.setAdapter(landScapeAdapter);
+
+        return viewCau3;
     }
 }
